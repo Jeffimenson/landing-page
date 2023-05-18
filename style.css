@@ -1,6 +1,13 @@
 body {
-    margin: 0;
+    margin: 0;  
+    font-family:'Times New Roman', Times, serif;
 }
+
+button {
+    font-family: inherit;
+    border: none;
+}
+/* || Header section */ 
 
 header {
     display: flex;
@@ -12,12 +19,6 @@ header {
     height: 4em;
 }
 
-img {
-    display: block;
-    width: 35em;
-    object-fit: cover;
-    height: 40em;
-}
 
 header ul {
     list-style-type: none; 
@@ -32,6 +33,7 @@ header ul li a {
     color: inherit;
 }
 
+/* || About section */ 
 .about {
     display: flex;
     justify-content: center;
@@ -45,8 +47,8 @@ header ul li a {
     flex-direction: column;
     justify-content: center; 
     flex-basis: 20em;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    gap: 1em;
 }
 
 .about button {
@@ -55,15 +57,99 @@ header ul li a {
     padding: 20px;
     color: aliceblue;
     border-radius: 10px;
+    font-size: 1em;
 }
 
 .about .card {
     background-color: rgba(235, 234, 234, 0.801);
     border-radius: 20px;
     display: flex;
-    padding: 15px;
+    padding: 8px;
     margin: 40px;
-    width: 60em;
     justify-content: space-evenly;
 }
+.card img {
+    display: block;
+    width: 35em;
+    object-fit: cover;
+    height: 40em;
+    border: 3px solid black;
+}
+.card h1{
+    font-size: 3em;
+    margin: 0;
+}
+.card p {
+    font-size: 1.4em;
+    margin: 0;
+}
 
+/* || Selection section - showcases cultures this restaurant represents */ 
+
+.selection {
+    padding: 30px;
+}
+.selection h1{
+    text-align: center;
+}
+.quad {
+    display: flex; 
+    justify-content: center;
+    gap: 3%; 
+}
+
+.entry img {
+    display: block;
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 12em;
+    height: 12em;
+}
+
+/* || Quote section! */
+
+.quote {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 30%;
+    background-color: rgba(235, 234, 234, 0.801);
+}
+
+.quote p {
+    font-size: xx-large;
+}
+
+.quote h1 {
+    align-self: flex-end;
+    margin-right: 20%;
+}
+
+/* || Banner section */ 
+.banner {
+    padding: 60px 0px;
+}
+.banner div {
+    width: 70%;
+    height: 8em;
+    background-color: rgb(55, 117, 73);
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    color: whitesmoke;
+}
+
+.banner h1, .banner p {
+    margin: 8px 0px;
+}
+.banner button {
+    width: 6em;
+    height: 3em;
+    background-color: inherit;
+    border: 2px solid whitesmoke;
+    color: inherit;
+    font-size: large;
+}
